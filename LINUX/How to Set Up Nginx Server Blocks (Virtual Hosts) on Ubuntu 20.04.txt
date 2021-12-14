@@ -1,0 +1,56 @@
+$ sudo mkdir -p /var/www/tunit.net/html
+$ sudo chown -R $root:$root /var/www/tunit.net/html
+$ sudo chmod -R 755 /var/www/tunit.net
+$ sudo nano /var/www/tunit.net/html/index.html
+
+<html>
+    <head>
+        <title>Welcome to tunit.net!</title>
+    </head>
+    <body>
+  <h1>Bravo! Your server block is working as expected!</h1>
+    </body>
+</html>
+
+$ sudo nano /etc/nginx/sites-available/tunit.net
+
+server {
+        listen 80;
+        listen [::]:80;
+
+        root /var/www/tunit.net/html;
+        index index.php index.html index.htm index.nginx-debian.html;
+
+        server_name tunit.net www.tunit.net;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+
+		
+    access_log /var/log/nginx/tunit.net.access.log;
+    error_log /var/log/nginx/tunit.net.error.log;
+
+}
+
+$ sudo ln -s /etc/nginx/sites-available/tunit.net /etc/nginx/sites-enabled/
+$ sudo nginx -t
+$ sudo systemctl restart nginx
+$ sudo systemctl status nginx
+
+===============================================================================
+
+SSL
+
+sudo certbot --nginx -d tunit.net -d www.tunit.net
+
+
+
+tunit
+YdkLbtZEeWRfzaRW
+
+a5MmNx3W88GzNWf
+
+
+
+echo "This is a test site @ www.ttngamepanel.com" | sudo tee /var/www/www.ttngamepanel.com/index.html
