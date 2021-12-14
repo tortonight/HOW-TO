@@ -1,0 +1,83 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++ How to Install and Configure Apache Web Server on Debian 11 +++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+# apt-get install apache2
+# apt-get install mariadb-client
+# apt-get install mariadb-server
+# apt-get install mysql
+# apt-get install php7.4
+# apt-get install phpmyadmin
+
+# sudo mysql_secure_installation
+# mysql -u root -p
+
+>GRANT ALL ON . TO 'phpmyadmin'@'%' IDENTIFIED BY 'password';
+>flush privileges;
+>exit;
+
+root@debian:~# sudo mkdir -p /var/www/ttngamepanel.com/html
+root@debian:~# sudo chown -R www-data:www-data /var/www/ttngamepanel.com /html
+root@debian:~# sudo chmod -R 755 /var/www/ttngamepanel.com
+root@debian:~# sudo mkdir -p /var/www/tonightgamer.com/html
+root@debian:~# sudo chmod -R 755 /var/www/tonightgamer.com
+root@debian:~# sudo mkdir -p /var/www/mathew350.com/html
+root@debian:~# sudo chmod -R 755 /var/www/mathew350.com
+
+root@debian:~# sudo nano /etc/apache2/sites-available/ttngamepanel.com.conf
+
+<VirtualHost *:80>
+  ServerAdmin admin@ttngamepanel.com
+  ServerName ttngamepanel.com
+  ServerAlias www.ttngamepanel.com
+  DocumentRoot /var/www/ttngamepanel.com/html
+  ErrorLog ${APACHE_LOG_DIR}/error.log
+  CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+#Once done, press Ctrl+O to save and then Ctrl+X to exit the file.
+
+root@debian:~# sudo nano /etc/apache2/sites-available/tonightgamer.com.conf
+
+<VirtualHost *:80>
+  ServerAdmin admin@tonightgamer.com
+  ServerName tonightgamer.com
+  ServerAlias www.tonightgamer.com
+  DocumentRoot /var/www/tonightgamer.com/html
+  ErrorLog ${APACHE_LOG_DIR}/error.log
+  CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+#Once done, press Ctrl+O to save and then Ctrl+X to exit the file.
+
+root@debian:~# sudo nano /etc/apache2/sites-available/mathew350.com.conf
+
+<VirtualHost *:80>
+  ServerAdmin admin@mathew350.com
+  ServerName mathew350.com
+  ServerAlias www.mathew350.com
+  DocumentRoot /var/www/mathew350.com/html
+  ErrorLog ${APACHE_LOG_DIR}/error.log
+  CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+#Once done, press Ctrl+O to save and then Ctrl+X to exit the file.
+
+#Now enable the virtual host file using the following command:
+root@debian:~# sudo a2ensite ttngamepanel.com.conf
+root@debian:~# sudo a2ensite tonightgamer.com.conf
+root@debian:~# sudo a2ensite mathew350.com.conf
+
+Now let’s disable the default Apache configurations using the following command:
+root@debian:~# sudo a2dissite 000-default.conf
+root@debian:~# sudo systemctl restart apache2
+
+#Now test the configuration for any syntax errors:
+root@debian:~# sudo apache2ctl configtest
+
+
+sudo apt -y install lsb-release apt-transport-https ca-certificates 
+sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
+echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/php.list
+sudo apt update
+sudo apt -y install php7.4
+
+sudo apt-get install php7.4-cli php7.4-fpm php7.4-bcmath php7.4-curl php7.4-gd php7.4-intl php7.4-json php7.4-mbstring php7.4-mysql php7.4-opcache php7.4-sqlite3 php7.4-xml php7.4-zip
+
