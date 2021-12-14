@@ -1,4 +1,4 @@
-Allow SSH root login on Ubuntu & Debian Linux system
+# Allow SSH root login on Ubuntu & Debian Linux system
 
 $ sudo passwd
 [sudo] password for linuxconfig: 
