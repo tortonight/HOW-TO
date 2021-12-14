@@ -1,3 +1,5 @@
+Allow SSH root login on Ubuntu & Debian Linux system
+
 $ sudo passwd
 [sudo] password for linuxconfig: 
 Enter new UNIX password: 
