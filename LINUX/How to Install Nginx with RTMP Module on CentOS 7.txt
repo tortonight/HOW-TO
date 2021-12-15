@@ -35,9 +35,9 @@ rtmp {
                 application live {
                         live on;
                         record off;
-                push rtmp://a.rtmp.youtube.com/live2/bazk-pe9k-2f5v-1dsf;
-                push rtmp://live-hkg.twitch.tv/app/live_496377925_iTU5IUboG2flTXjuINOavI3WRS13l9;
-                push rtmp://127.0.0.1:1936/rtmp/1473969826105205?s_bl=1&s_ps=1&s_psm=1&s_sw=0&s_vt=api-s&a=Abxw5RzjpAC0oShK;
+                push rtmp://a.rtmp.youtube.com/live2/xxxx-xxxx-xxxx-xxxx;
+                push rtmp://live-hkg.twitch.tv/app/live_496377925_xxxxxxxxxxxxxxxxxxxxxxxx;
+                push rtmp://127.0.0.1:1936/rtmp/1473969826105205?xxxxxxxxxxxxxxxxxxxxxxxxxxxx;
 
                 }
         }
