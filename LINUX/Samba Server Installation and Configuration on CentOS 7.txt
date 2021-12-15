@@ -1,0 +1,139 @@
+
+yum install samba samba-client samba-common
+
+cp -pf /etc/samba/smb.conf /etc/samba/smb.conf.bak
+
+cat /dev/null > /etc/samba/smb.conf
+
+/etc/samba/smb.conf
+----------------------------------------------------
+[global]
+workgroup = WORKGROUP
+server string = Samba Server %v
+netbios name = centos
+security = user
+map to guest = bad user
+dns proxy = no
+#============================ Share Definitions ============================== 
+[SharedFile]
+    path = /home/samba/sharedfile
+    browsable =yes
+    writable = yes
+    guest ok = yes
+    read only = no
+    create mode = 0777
+    directory mode = 0777
+
+[Share]
+    path = /home/samba/share
+    writable = yes
+    guest ok = yes
+    guest only = yes
+    create mode = 0777
+    directory mode = 0777
+
+[ShareqBit]
+    path = /home/samba/shareqbit
+    writable = yes
+    guest ok = yes
+    guest only = yes
+    create mode = 0777
+    directory mode = 0777
+
+[Cam1]
+    path = /home/samba/camera1
+    writable = yes
+    guest ok = yes
+    guest only = yes
+    create mode = 0777
+    directory mode = 0777
+
+[Cam2]
+    path = /home/samba/camera2
+    writable = yes
+    guest ok = yes
+    guest only = yes
+    create mode = 0777
+    directory mode = 0777
+
+[iPhone 8 Plus]
+    path = /home/samba/iPhone.8.Plus
+    writable = yes
+    guest ok = yes
+    guest only = yes
+    create mode = 0777
+    directory mode = 0777
+    
+---------------------------------------------------
+mkdir -p /home/samba/sharedfile
+mkdir -p /home/samba/share
+mkdir -p /home/samba/shareqbit
+mkdir -p /home/samba/camera1
+mkdir -p /home/samba/camera2
+mkdir -p /home/samba/iPhone.8.Plus
+
+cd /home/samba
+chmod -R 0777 sharedfile/
+chmod -R 0777 share/
+chmod -R 0777 shareqbit/
+chmod -R 0777 camera1/
+chmod -R 0777 camera2/
+chmod -R 0777 iPhone.8.Plus/
+
+chown -R nobody:nobody sharedfile/
+chown -R nobody:nobody share/
+chown -R nobody:nobody shareqbit/
+chown -R nobody:nobody camera1/
+chown -R nobody:nobody camera2/
+chown -R nobody:nobody iPhone.8.Plus/
+
+###########################################
+##Install Samba on Ubuntu 20.04##
+sudo chown -R nobody:nogroup sharedfile/
+sudo chown -R nobody:nogroup share/
+sudo chown -R nobody:nogroup shareqbit/
+sudo chown -R nobody:nogroup camera1/
+sudo chown -R nobody:nogroup camera2/
+sudo chown -R nobody:nogroup iPhone.8.Plus/
+
+sudo chgrp sambashare sharedfile/
+sudo chgrp sambashare share/
+sudo chgrp sambashare shareqbit/
+sudo chgrp sambashare camera1/
+sudo chgrp sambashare camera2/
+sudo chgrp sambashare iPhone.8.Plus/
+
+###########################################
+
+ls -l
+ls -l sharedfile/
+ls -l share/
+ls -l shareqbit/
+ls -l camera1/
+ls -l camera2/
+ls -l iPhone.8.Plus/
+
+chcon -Rt samba_share_t
+chcon -Rt samba_share_t sharedfile/
+chcon -Rt samba_share_t share/
+chcon -Rt samba_share_t shareqbit/
+chcon -Rt samba_share_t camera1/
+chcon -Rt samba_share_t camera2/
+chcon -Rt samba_share_t iPhone.8.Plus/
+
+systemctl enable smb.service
+systemctl enable nmb.service
+systemctl restart smb.service
+systemctl restart nmb.service
+
+========================================================
+===CentOS 7 Firewall-cmd===
+
+# firewall-cmd --permanent --zone=public --add-service=samba
+# firewall-cmd --reload
+
+# firewall-cmd --zone=public --add-port=XXXX/udp --permanent
+success
+# firewall-cmd --zone=public --add-port=XXXX/tcp --permanent
+success
+# firewall-cmd --reload
