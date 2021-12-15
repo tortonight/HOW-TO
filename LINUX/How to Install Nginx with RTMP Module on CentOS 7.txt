@@ -1,0 +1,74 @@
+How to Install Nginx with RTMP Module on CentOS 7
+<--
+https://github.com/arut/nginx-rtmp-module
+http://nginx.org/download/
+https://obsproject.com/forum/resources/how-to-set-up-your-own-private-rtmp-server-using-nginx.50/
+-->
+Step 1: Setting up and configuring the server
+$ sudo yum -y groupinstall 'Development Tools'
+$ sudo yum -y install epel-release
+$ sudo yum install -y  wget git unzip perl perl-devel perl-ExtUtils-Embed libxslt libxslt-devel libxml2 libxml2-devel gd gd-devel pcre-devel GeoIP GeoIP-devel
+$ wget https://nginx.org/download/nginx-1.17.8.tar.gz
+$ wget https://github.com/arut/nginx-rtmp-module/archive/master.tar.gz
+$ tar -xzvf nginx-1.17.8.tar.gz
+$ tar -xzvf master.tar.gz
+$ rm nginx-1.17.8.tar.gz
+$ rm -xzvf master.tar.gz
+$ cd nginx-1.17.8
+$ ./configure --with-http_ssl_module --without-http_gzip_module --add-module=../nginx-rtmp-module-master
+$ make
+$ make install
+
+Step 2: Configuring nginx
+$ nano /usr/local/nginx/conf/nginx.conf
+==========================================================
+worker_processes  auto;
+events {
+    worker_connections  1024;
+}
+rtmp {
+        server {
+                listen 1935;
+                chunk_size 4096;
+               #chunk_size 8192;
+
+                application live {
+                        live on;
+                        record off;
+                push rtmp://a.rtmp.youtube.com/live2/bazk-pe9k-2f5v-1dsf;
+                push rtmp://live-hkg.twitch.tv/app/live_496377925_iTU5IUboG2flTXjuINOavI3WRS13l9;
+                push rtmp://127.0.0.1:1936/rtmp/1473969826105205?s_bl=1&s_ps=1&s_psm=1&s_sw=0&s_vt=api-s&a=Abxw5RzjpAC0oShK;
+
+                }
+        }
+}
+===========================================================
+====Install stunnel on centos 7.6====
+sudo yum -y install stunnel
+==stunnel.conf==
+========================================
+setuid = nobody
+setgid = nobody
+pid=/tmp/stunnel.pid
+output = /var/log/stunnel.log
+;include = /etc/stunnel/conf.d
+
+[fb-live]
+client = yes
+accept = 127.0.0.1:19350
+connect = live-api-s.facebook.com:443
+;verifyChain = no
+========================================
+===Run Server Live===
+[Nginx]
+$ sudo /usr/local/nginx/sbin/nginx -s stop
+$ sudo /usr/local/nginx/sbin/nginx
+[Stunnel]
+Save file to:
+/lib/systemd/system/stunnel.service
+systemctl enable stunnel.service --now
+$ stunnel /etc/stunnel/stunnel.conf
+$ kill `cat /var/run/stunnel/stunnel.pid`
+
+OBS Studio
+rtmp://192.168.0.136/live
