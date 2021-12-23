@@ -38,10 +38,10 @@ $ sudo service ssh restart
 ---
 # All About Sudo on a Debian 10 Buster System
 ```css
-$ su -
-$ apt-get update
-$ apt-get install sudo
-$ visudo
+# su -
+# apt-get update
+# apt-get install sudo
+# visudo
 %user       ALL=(ALL:ALL) ALL
 ```
 ---
