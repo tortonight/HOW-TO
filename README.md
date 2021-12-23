@@ -3,10 +3,10 @@
 - [How to Install and Configure Apache Web Server on Debian 10](https://vitux.com/debian-apache/)
 ---
 # Allow SSH root login on Debian Linux
-```
-su
-sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
-/etc/init.d/ssh restart
+```css
+$ su
+$ sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+$ /etc/init.d/ssh restart
 ```
 ```css
 #############################################################
