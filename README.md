@@ -36,3 +36,12 @@ $ sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/s
 $ sudo service ssh restart
 ```
 ---
+# All About Sudo on a Debian 10 Buster System
+```css
+$ su -
+$ apt-get update
+$ apt-get install sudo
+$ visudo
+%user       ALL=(ALL:ALL) ALL
+```
+---
