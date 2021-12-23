@@ -8,7 +8,7 @@ su
 sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 /etc/init.d/ssh restart
 ```
-```CS
+```css
 #############################################################
 To enable SSH login for a root user on Debian Linux system you need to first configure SSH server.
  Open /etc/ssh/sshd_config and change the following line:
@@ -23,5 +23,16 @@ Once you made the above change restart your SSH server:
 $ /etc/init.d/ssh restart
 [ ok ] Restarting ssh (via systemctl): ssh.service.
 #############################################################
+```
+# Allow SSH root login on Ubuntu 18.04
+```css
+$ sudo passwd
+[sudo] password for linuxconfig: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+
+$ sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+$ sudo service ssh restart
 ```
 ---
