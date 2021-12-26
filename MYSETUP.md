@@ -14,3 +14,7 @@
 ```css
 # sudo apt-get install wget curl git -y
 ```
+# 🐦 pterodactyl-installer
+```css
+# bash <(curl -s https://pterodactyl-installer.se)
+```
