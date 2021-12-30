@@ -12,7 +12,7 @@
 %user       ALL=(ALL:ALL) ALL
 ```
 ```css
-# sudo apt-get install wget curl git -y
+# sudo apt-get install wget curl git screen -y
 ```
 # 🐦 pterodactyl-installer
 ```css
