@@ -18,3 +18,5 @@
 ```css
 # bash <(curl -s https://pterodactyl-installer.se)
 ```
+# 👨‍🚒 Secure MariaDB Server
+[mysql_secure_installation](https://github.com/tortonight/My-Virtual-Hosts-Configure/blob/main/mysql_secure_installation.md)
