@@ -18,5 +18,11 @@
 ```css
 # bash <(curl -s https://pterodactyl-installer.se)
 ```
+# Pterodactyl-AutoAddons
+```
+bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/main/install.sh)
+```
+[Link](https://github.com/Ferks-FK/Pterodactyl-AutoAddons)
+
 # 👨‍🚒 Secure MariaDB Server
 [mysql_secure_installation](https://github.com/tortonight/My-Virtual-Hosts-Configure/blob/main/mysql_secure_installation.md)
