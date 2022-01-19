@@ -15,8 +15,8 @@
 # sudo apt-get install wget curl git screen -y
 ```
 # 🐦 pterodactyl-installer
-```css
-# bash <(curl -s https://pterodactyl-installer.se)
+```
+bash <(curl -s https://pterodactyl-installer.se)
 ```
 # Pterodactyl-AutoAddons
 ```
