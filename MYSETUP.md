@@ -18,6 +18,8 @@
 ```
 bash <(curl -s https://pterodactyl-installer.se)
 ```
+[Link](https://github.com/vilhelmprytz/pterodactyl-installer)
+
 # Pterodactyl-AutoAddons
 ```
 bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/main/install.sh)
