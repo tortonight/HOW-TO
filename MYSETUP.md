@@ -15,7 +15,7 @@ passwd: password updated successfully
 sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 sudo service ssh restart
 ```
-
+# Install SUDO on Debian
 ```css
 # su -
 # apt-get update
