@@ -430,17 +430,17 @@
     "The Language of the Datatables. Grab the Language-Codes from here": "ภาษาของชุดข้อมูล รับรหัสภาษาจากที่นี่",
     "Let the Client change the Language": "ให้ลูกค้าเปลี่ยนภาษา",
     "Icons updated!": "อัพเดทไอคอน!",
-    "cs": "Czech",
-    "de": "German",
-    "en": "English",
-    "es": "Spanish",
-    "fr": "French",
-    "hi": "Hindi",
-    "it": "Italian",
-    "nl": "Dutch",
+    "cs": "เช็ก",
+    "de": "เยอรมัน",
+    "en": "ภาษาอังกฤษ",
+    "es": "สเปน",
+    "fr": "ภาษาฝรั่งเศส",
+    "hi": "ภาษาฮินดี"
+    "it": "อิตาลี",
+    "nl": "ดัตช์",
     "pl": "Polish",
-    "zh": "Chinese",
-    "tr": "Turkish",
-    "ru": "Russian",
-    "th": "Thai"
+    "zh": "จีน (ตัวย่อ)",
+    "tr": "ตุรกี"
+    "ru": "รัสเซีย"
+    "th": "ไทย"
 }
