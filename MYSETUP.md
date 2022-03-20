@@ -4,17 +4,6 @@
 # sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 # /etc/init.d/ssh restart
 ```
-# Install on Ubuntu
-```css
-sudo passwd
-[sudo] password for linuxconfig: 
-Enter new UNIX password: 
-Retype new UNIX password: 
-passwd: password updated successfully
-#
-sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
-sudo service ssh restart
-```
 # Install SUDO on Debian
 ```css
 # su -
