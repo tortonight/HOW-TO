@@ -25,7 +25,7 @@ rm -rf /var/www/pma.mcpanalunit.net/config
 nano /etc/nginx/sites-available/pma.mcpanalunit.net.conf
 ```
 NGINX without SSL
-```
+```nginx
 server {
     listen 80;
     server_name pma.mcpanalunit.net;
