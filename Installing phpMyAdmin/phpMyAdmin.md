@@ -1,9 +1,8 @@
 # Installing phpMyAdmin
-```
-Dependencies
+
+- Dependencies
 
 The following guide assumes installation of phpMyAdmin alongside pterodactyl on a single web server, therefore it skips dependency installation
-```
 - Installation
 ```
 mkdir /var/www/pma.mcpanalunit.net && cd /var/www/pma.mcpanalunit.net
@@ -75,7 +74,7 @@ server {
     }
 }
 ```
-Ctrl+O To save | Ctrl+x To Exit
+Ctrl+O To save | Ctrl+X To Exit
 - Applying Configuration
 ```
 sudo ln -s /etc/nginx/sites-available/pma.mcpanalunit.net.conf /etc/nginx/sites-enabled/pma.mcpanalunit.net.conf
