@@ -1,4 +1,4 @@
-# Install on Ubuntu
+# sshd_config on Ubuntu
 ```css
 sudo passwd
 [sudo] password for linuxconfig: 
@@ -9,7 +9,7 @@ passwd: password updated successfully
 sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 sudo service ssh restart
 ```
-# Install on Debian
+# sshd_config on Debian
 ```css
 # su -
 # sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
