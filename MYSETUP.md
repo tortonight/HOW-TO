@@ -11,20 +11,20 @@ sudo service ssh restart
 ```
 # sshd_config on Debian
 ```css
-# su -
-# sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
-# /etc/init.d/ssh restart
+su -
+sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+/etc/init.d/ssh restart
 ```
 # Install SUDO on Debian
 ```css
-# su -
-# apt-get update
-# apt-get install sudo
-# visudo
+su -
+apt-get update
+apt-get install sudo
+visudo
 %user       ALL=(ALL:ALL) ALL
 ```
 ```css
-# sudo apt-get install wget curl git screen -y
+sudo apt-get install wget curl git screen -y
 ```
 # 🐦 pterodactyl-installer
 ```
