@@ -31,7 +31,11 @@ sudo apt-get install wget curl git screen -y
 bash <(curl -s https://pterodactyl-installer.se)
 ```
 [Link](https://github.com/vilhelmprytz/pterodactyl-installer)
-
+# 👷🏻‍♂️ ForestRacks Pterodactyl Installer
+```
+bash <(curl -s https://raw.githubusercontent.com/ForestRacks/PteroInstaller/main/install.sh)
+```
+[Link](https://github.com/ForestRacks/PteroInstaller)
 # Pterodactyl-AutoAddons
 ```
 bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/main/install.sh)
