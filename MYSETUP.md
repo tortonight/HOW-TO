@@ -41,6 +41,13 @@ bash <(curl -s https://raw.githubusercontent.com/ForestRacks/PteroInstaller/main
 bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/main/install.sh)
 ```
 [Link](https://github.com/Ferks-FK/Pterodactyl-AutoAddons)
+# 👨🏼‍💻 AMP CubeCoders
+```
+bash <(wget -qO- getamp.sh)
+```
+Debian 8 64-bit or newer (Debian 10 or 11 Recommended)
+Root access via SSH
 
+[Link](https://cubecoders.com/AMPInstall)
 # 👨‍🚒 Secure MariaDB Server
 [mysql_secure_installation](https://github.com/tortonight/My-Virtual-Hosts-Configure/blob/main/mysql_secure_installation.md)
