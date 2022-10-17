@@ -54,3 +54,5 @@ Root access via SSH
 
 # Arma 3 Server on Linux
 [link](https://github.com/tortonight/ArmA3-Server-on-Linux/blob/main/README.md)
+# Jexactyl
+[Jexactyl](https://docs.jexactyl.com/#/latest/panel/install/dependencies)
