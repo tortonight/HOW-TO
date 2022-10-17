@@ -56,3 +56,5 @@ Root access via SSH
 [link](https://github.com/tortonight/ArmA3-Server-on-Linux/blob/main/README.md)
 # Jexactyl
 [Jexactyl](https://docs.jexactyl.com/#/latest/panel/install/dependencies)
+# hPanel
+[hPanel](https://docs.halexnodes.net/hpanel/installation)
