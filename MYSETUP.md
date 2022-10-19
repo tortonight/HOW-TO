@@ -27,22 +27,22 @@ visudo
 sudo apt-get install wget curl git screen -y
 ```
 # 🐦 pterodactyl-installer
-```
+```bash
 bash <(curl -s https://pterodactyl-installer.se)
 ```
 [Link](https://github.com/vilhelmprytz/pterodactyl-installer)
 # 👷🏻‍♂️ ForestRacks Pterodactyl Installer
-```
+```bash
 bash <(curl -s https://raw.githubusercontent.com/ForestRacks/PteroInstaller/main/install.sh)
 ```
 [Link](https://github.com/ForestRacks/PteroInstaller)
 # Pterodactyl-AutoAddons
-```
+```bash
 bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/main/install.sh)
 ```
 [Link](https://github.com/Ferks-FK/Pterodactyl-AutoAddons)
 # 👨🏼‍💻 AMP CubeCoders
-```
+```bash
 bash <(wget -qO- getamp.sh)
 ```
 Debian 8 64-bit or newer (Debian 10 or 11 Recommended)
