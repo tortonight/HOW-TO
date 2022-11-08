@@ -18,7 +18,7 @@ sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd
 # Install SUDO on Debian
 ```css
 su -
-apt-get update
+sudo apt update && sudo apt upgrade -y
 apt-get install sudo
 visudo
 %user       ALL=(ALL:ALL) ALL
