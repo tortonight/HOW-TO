@@ -26,6 +26,9 @@ visudo
 ```css
 sudo apt-get install wget curl git screen net-tools -y
 ```
+```bash
+sudo timedatectl set-timezone Asia/Hong_Kong
+```
 # 🐦 pterodactyl-installer
 ```bash
 bash <(curl -s https://pterodactyl-installer.se)
