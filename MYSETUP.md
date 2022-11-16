@@ -24,7 +24,7 @@ visudo
 %user       ALL=(ALL:ALL) ALL
 ```
 ```css
-sudo apt-get install wget curl git screen -y
+sudo apt-get install wget curl git screen net-tools -y
 ```
 # 🐦 pterodactyl-installer
 ```bash
