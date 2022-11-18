@@ -22,4 +22,6 @@ Links:
 
 [Portainer](https://www.portainer.io)
 
+* Install Portainer with Docker on Linux
+
 [Portainer Docs](https://docs.portainer.io/start/install/server/docker/linux)
