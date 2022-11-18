@@ -13,7 +13,13 @@ docker-compose --version
 docker run -d -p 8000:8000 -p 9443:9443 --name portainer-ce --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data_ce:/data portainer/portainer-ce:latest
 ```
 * EE
+* Here is your Portainer Business Edition license key:
+* https://www.portainer.io/take-5
 ```bash
 docker run -d -p 8000:8000 -p 9443:9443 --name portainer-ee --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data_ee:/data portainer/portainer-ee:latest
 ```
+Links:
 
+[Portainer](https://www.portainer.io)
+
+[Portainer Docs](https://docs.portainer.io/start/install/server/docker/linux)
