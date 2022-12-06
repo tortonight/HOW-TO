@@ -9,6 +9,9 @@ passwd: password updated successfully
 sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 sudo service ssh restart
 ```
+```bash
+echo "Set disable_coredump false" >> /etc/sudo.conf
+```
 # sshd_config on Debian
 ```css
 su -
