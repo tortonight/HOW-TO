@@ -64,7 +64,8 @@ server_config : *randomly generated string* {
  name_tags: true
  friends_only: false
  show_server: true
- moderator_list: 0
+ moderator_list: 1
+ moderator_list[0]: Steam64 ID Here
 }
 
 }
@@ -74,9 +75,9 @@ server_config : *randomly generated string* {
 To add moderators to your server instance you have to also add them to this file. An example seen below:
 ```
 moderator_list: 3
-moderator_list[0]: "Steam64 ID Here"
-moderator_list[1]: "Steam64 ID Here"
-moderator_list[2]: "Steam64 ID Here",
+moderator_list[0]: Steam64 ID Here
+moderator_list[1]: Steam64 ID Here
+moderator_list[2]: Steam64 ID Here
 ^^^ Can be found by googling Steam ID Lookup
 ```
 https://steamid.io/
