@@ -36,7 +36,7 @@ Proceed to the .local/share/Euro Truck Simulator 2
 ![ ](https://raw.githubusercontent.com/tortonight/HOW-TO/main/Image/image-2.webp)
 
 Edit the server_config.sii making changes to name, password etc. This is also where you would change your default ports if needed to suit your Pterodactyl settings. It should look something like this when you are finished:
-```bash
+```
 SiiNunit
 {
 server_config : *randomly generated string* {
