@@ -18,7 +18,7 @@ Once you have enabled your console and started ETS2, go ahead and log in to game
 
 Once you have your convoy set up in game, press the ~ key and a console will open on the bottom center of your screen. If a console does not open, close ETS2 and go back up to Enabling Console section and go through those steps again.
 
-With the console open type export_server_packages and press enter. The game will then tell you that the export was successful.
+With the console open type `export_server_packages` and press enter. The game will then tell you that the export was successful.
 
 Navigate to the folder that contains your clients config.cfg file that you changed in the Enabling Console section and look for the following:
 ```
