@@ -1,0 +1,132 @@
+SiiNunit
+{
+server_packages_info : _nameless.1ac.d647.7790 {
+ version: 1
+ dlc_essential_list: 0
+ dlc_non_essential_list: 7
+ dlc_non_essential_list[0]: 2583912098162477
+ dlc_non_essential_list[1]: 92094914797
+ dlc_non_essential_list[2]: 92649725589
+ dlc_non_essential_list[3]: 59316381
+ dlc_non_essential_list[4]: 50085130457797
+ dlc_non_essential_list[5]: 63651269
+ dlc_non_essential_list[6]: 2152080662829
+ mod_list: 10
+ mod_list[0]: _nameless.1ac.d607.eb40
+ mod_list[1]: _nameless.1ac.d607.eba0
+ mod_list[2]: _nameless.1ac.d607.f800
+ mod_list[3]: _nameless.1ac.d607.e240
+ mod_list[4]: _nameless.1ac.d607.e6c0
+ mod_list[5]: _nameless.1ac.d607.f3e0
+ mod_list[6]: _nameless.1ac.d607.f4a0
+ mod_list[7]: _nameless.1ac.d607.f680
+ mod_list[8]: _nameless.1ac.d607.ed80
+ mod_list[9]: _nameless.1ac.d607.e5a0
+ map_name: "/map/europe.mbd"
+ map_dimensions: (-25600000, -43008000, 39936000, 27648000)
+ roads_data_file_name: "/home/server_packages_promods.dat"
+ time_stamp: 1690605365
+ time_compression: 15.560001
+}
+
+server_mod_detail : _nameless.1ac.d607.eb40 {
+ package_name: "mod_workshop_package.000000009D35FCCD"
+ mod_name: "ProMods 2.65 Convoy Mode"
+ checksum: 18240603003812832366
+ mod_id: 2637561037
+ workshop_mod: true
+ optional_mod: false
+ full_name: false
+}
+
+server_mod_detail : _nameless.1ac.d607.eba0 {
+ package_name: "promods-model1-v265"
+ mod_name: "ProMods Models Package 1"
+ checksum: 5554588228394049252
+ mod_id: 7181747287108432836
+ workshop_mod: false
+ optional_mod: false
+ full_name: true
+}
+
+server_mod_detail : _nameless.1ac.d607.f800 {
+ package_name: "promods-model2-v265"
+ mod_name: "ProMods Models Package 2"
+ checksum: 4314952210120769902
+ mod_id: 2627275959962381185
+ workshop_mod: false
+ optional_mod: false
+ full_name: true
+}
+
+server_mod_detail : _nameless.1ac.d607.e240 {
+ package_name: "promods-model3-v265"
+ mod_name: "ProMods Models Package 3"
+ checksum: 14874328996730218543
+ mod_id: 11830053271579466499
+ workshop_mod: false
+ optional_mod: false
+ full_name: true
+}
+
+server_mod_detail : _nameless.1ac.d607.e6c0 {
+ package_name: "promods-map-v265"
+ mod_name: "ProMods Map Package"
+ checksum: 8379082760761224160
+ mod_id: 4382447597447341010
+ workshop_mod: false
+ optional_mod: false
+ full_name: true
+}
+
+server_mod_detail : _nameless.1ac.d607.f3e0 {
+ package_name: "promods-media-v265"
+ mod_name: "ProMods Media Package"
+ checksum: 14145439554046202533
+ mod_id: 13124882794472696489
+ workshop_mod: false
+ optional_mod: false
+ full_name: true
+}
+
+server_mod_detail : _nameless.1ac.d607.f4a0 {
+ package_name: "promods-assets-v265"
+ mod_name: "ProMods Assets Package"
+ checksum: 12389720773636298413
+ mod_id: 14898042667666223550
+ workshop_mod: false
+ optional_mod: false
+ full_name: true
+}
+
+server_mod_detail : _nameless.1ac.d607.f680 {
+ package_name: "promods-def-st-v265"
+ mod_name: "ProMods Definition Packa"
+ checksum: 4648214153751191407
+ mod_id: 3333358614789081617
+ workshop_mod: false
+ optional_mod: false
+ full_name: false
+}
+
+server_mod_detail : _nameless.1ac.d607.ed80 {
+ package_name: "promods-me-defmap-v265"
+ mod_name: "ProMods Middle-East Add-"
+ checksum: 11808838452044197600
+ mod_id: 14524392459136009111
+ workshop_mod: false
+ optional_mod: false
+ full_name: false
+}
+
+server_mod_detail : _nameless.1ac.d607.e5a0 {
+ package_name: "promods-me-assets-v265"
+ mod_name: "ProMods Middle-East Add-"
+ checksum: 15737735985345431221
+ mod_id: 5797587188572896692
+ workshop_mod: false
+ optional_mod: false
+ full_name: false
+}
+
+}
