@@ -39,12 +39,12 @@ bash <(curl -s https://pterodactyl-installer.se)
 [Link](https://github.com/vilhelmprytz/pterodactyl-installer)
 # 👷🏻‍♂️ ForestRacks Pterodactyl Installer
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/ForestRacks/PteroInstaller/main/install.sh)
+bash <(curl -Ss https://raw.githubusercontent.com/ForestRacks/PteroInstaller/Production/install.sh || wget -O - https://raw.githubusercontent.com/ForestRacks/PteroInstaller/Production/install.sh) auto
 ```
 [Link](https://github.com/ForestRacks/PteroInstaller)
 # Pterodactyl-AutoAddons
 ```bash
-bash <(curl -Ss https://raw.githubusercontent.com/ForestRacks/PteroInstaller/Production/install.sh || wget -O - https://raw.githubusercontent.com/ForestRacks/PteroInstaller/Production/install.sh) auto
+bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/main/install.sh)
 ```
 [Link](https://github.com/Ferks-FK/Pterodactyl-AutoAddons)
 # 👨🏼‍💻 AMP CubeCoders
