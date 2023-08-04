@@ -82,6 +82,11 @@ moderator_list[2]: Steam64 ID Here
 ```
 https://steamid.io/
 
+```
+76561198127623769 // knightwolf
+76561198196638689 // TORTonight
+```
+
 ## Enjoy your server
 
 Once those files have been uploaded and configured you are free to start up your server.
