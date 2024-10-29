@@ -1,10 +1,11 @@
 ## จำเป็นติดตั้ง
-## [Run On Windows]
+## [My On Windows & Linux]
 [horizontal]
 
 ➡ MariaDB :: https://mariadb.org/download/
 ➡ HeidiSQL :: https://www.heidisql.com/download.php
 ➡ VS Code :: https://code.visualstudio.com/download
-➡ Artifacts :: https://runtime.fivem.net/artifacts/fivem/build_server_windows/master
+➡ Artifacts WIN :: https://runtime.fivem.net/artifacts/fivem/build_server_windows/master
+➡ Artifacts LINUX :: https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master
 ➡ FiveM key :: https://keymaster.fivem.net/login
 ➡ Steam key :: https://steamcommunity.com/dev/apikey
