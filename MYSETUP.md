@@ -1,11 +1,13 @@
-# sshd_config on Ubuntu
+# By default the root’s password on Ubuntu 24.10
 ```css
 sudo passwd
 [sudo] password for linuxconfig: 
 Enter new UNIX password: 
 Retype new UNIX password: 
 passwd: password updated successfully
-
+```
+# sshd config root login on Ubuntu 24.10
+```css
 sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 sudo service ssh restart
 ```
