@@ -14,6 +14,14 @@ sudo service ssh restart
 ```bash
 echo "Set disable_coredump false" >> /etc/sudo.conf
 ```
+# Install older PHP versions on 24.10
+```css
+sudo add-apt-repository --remove ppa:ondrej/php
+sudo add-apt-repository ppa:ondrej/php
+sudo sed -i 's/oracular/noble/g' /etc/apt/sources.list.d/ondrej-ubuntu-php-oracular.sources
+sudo apt update
+sudo apt install php8.2 php8.1 php8.0 php7.4
+```
 # sshd_config on Debian
 ```css
 su -
