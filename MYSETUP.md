@@ -52,6 +52,11 @@ bash <(curl -s https://pterodactyl-installer.se)
 bash <(curl -Ss https://raw.githubusercontent.com/ForestRacks/PteroInstaller/Production/install.sh || wget -O - https://raw.githubusercontent.com/ForestRacks/PteroInstaller/Production/install.sh) auto
 ```
 [Link](https://github.com/ForestRacks/PteroInstaller)
+# 📝 dactyl-installer Official Pterodactyl Project.
+```bash
+bash <(curl -s https://dactyl.shardbyte.com)
+```
+[Link](https://github.com/Shardbyte/dactyl-installer)
 # Pterodactyl-AutoAddons
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/main/install.sh)
