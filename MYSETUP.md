@@ -34,7 +34,7 @@ su -
 sudo apt update && sudo apt upgrade -y
 apt-get install sudo
 visudo
-%user       ALL=(ALL:ALL) ALL
+%user   ALL=(ALL:ALL) ALL
 ```
 ```css
 sudo apt-get install wget curl git screen net-tools -y
