@@ -2,9 +2,10 @@
 Welcome to my first Tutorial. This video will guide you through the Docker and Docker-Compose installation. Afterwards we will install Portainer (CE and EE) to manage our Docker hosts or Docker containers.
 
 ```bash
-sudo -I
+sudo -i
 apt update && apt upgrade
-apt install docker docker-compose
+snap install docker          # version 27.2.0, or
+apt  install docker-compose  # version 1.29.2-6
 docker ps
 docker-compose --version
 ```
