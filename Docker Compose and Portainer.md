@@ -27,19 +27,26 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 docker ps
 docker-compose --version
 ```
-* CE
+Portainer Install
+* CE Community Edition
+```
+docker volume create portainer_data_ce
+```
 ```bash
 docker run -d -p 8000:8000 -p 9443:9443 --name portainer-ce --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data_ce:/data portainer/portainer-ce:latest
 ```
-* EE
-* Here is your Portainer Business Edition license key:
-* https://www.portainer.io/take-5
+* EE Business Edition Here is your Portainer Business Edition license key:
+
+[license key](https://www.portainer.io/take-5)
+```
+docker volume create portainer_data_ee
+```
 ```bash
 docker run -d -p 8000:8000 -p 9443:9443 --name portainer-ee --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data_ee:/data portainer/portainer-ee:latest
 ```
 Links:
 
-[Portainer](https://www.portainer.io)
+[Portainer Install](https://www.portainer.io/install)
 
 * Install Portainer with Docker on Linux
 
