@@ -53,3 +53,5 @@ Links:
 * Install Portainer with Docker on Linux
 
 [Portainer Docs](https://docs.portainer.io/start/install/server/docker/linux)
+
+[How To Remove Docker Images, Containers, and Volumes](https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes)
